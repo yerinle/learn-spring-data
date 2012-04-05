@@ -8,7 +8,9 @@ import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.transaction.annotation.Transactional;
 
+import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertThat;
 
 /**
  * @author Yinka Erinle.
@@ -35,5 +37,6 @@ public class UserRepositoryTest {
         user = repository.save(user);
 
         assertEquals(user, repository.findOne(user.getId()));
+        assertThat(user.getFirstName(), is("yinka"));
     }
 }

@@ -2,9 +2,12 @@ package com.hebace.lsd.domain;
 
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
+import javax.persistence.Entity;
+
 /**
  * @author Yinka Erinle.
  */
+@Entity
 public class User extends AbstractPersistable<Long> {
 
     private String firstName;
