@@ -9,6 +9,6 @@
 
     <import resource="infrastructure.xml" />
 
-    <jpa:repositories base-package="com.hebace.lsd.repository" />
+    <jpa:repositories base-package="com.hebace.lsd.repository" transaction-manager-ref="myTxManager" />
 
 </beans>

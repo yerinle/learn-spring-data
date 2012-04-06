@@ -2,6 +2,7 @@ package com.hebace.lsd.repository;
 
 import com.hebace.lsd.domain.User;
 import org.springframework.data.repository.CrudRepository;
+import org.springframework.transaction.annotation.Transactional;
 
 /**
  * @author Yinka Erinle.
